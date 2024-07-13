@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&family=Raleway:wght@300;500;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+body {
+    overflow-x: hidden;
+    background-color: rgb(250, 250, 250);
+}
+.blackcolorbody {
+    background-color: rgb(44, 43, 43)
+}
+.active {
+    filter: blur(5px);
+    
+}
+/*Navigation*/
+.nav-section {
+    transition: 0.25s ease;
+}
+#counter-basket-product {
+    display: inline;
+    background-color: rgb(0, 0, 0);
+    padding: 0px 5px 2px 5px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(242, 242, 242);
+
+
+}
+#counter-basket-product:hover {
+    color: rgb(242, 242, 242);
+}
+
+section header {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255);
+    position:fixed;
+    z-index: 1;
+}
+section header .logo {
+
+    margin-left: 35px;
+    font-size: 34px;
+    text-decoration: none;
+    font-weight: 700;
+    color: rgb(29, 28, 28);
+}
+section header .logo img {
+    max-height: auto;
+    max-width: 150px;
+}
+section header ul {
+    display: flex;
+    align-items: center;
+}
+
+section header ul li {
+    list-style: none;
+}
+section header ul li a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(29, 28, 28);
+    margin-right: 30px;
+    padding: 15px;
+    transition: 0.25s ease;
+}
+section header ul li a img {
+    height: 35px;
+    cursor: pointer;
+}
+section header ul li:hover,
+section header ul li :hover {
+    transform: translateY(-1px);
+    color: rgba(161, 159, 223, 0.82);
+}
+
+/*Content*/
+.contect-section {
+    transition: 0.25s ease;
+}
+.content-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    transition: 0.25s ease;
+}
+.content-container img {
+    max-width: 550px;
+    max-height: 550px;
+    object-fit: contain;
+
+}
+.content-container .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+.content-container .content h2 {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 56px;
+    font-weight: 700;
+    padding: 100px 100px 20px 100px;
+}
+.content-container .content p {
+    margin-top: 15px;
+    font-size: 38px;
+    max-width: 800px;
+    text-align: justify;
+}
+.content-container .content .btn {
+    cursor: pointer;
+    margin: 0 auto;
+    height: 50px;
+    text-align: center;
+    width: fit-content;
+    font-size: 26px;
+    font-weight: 700;
+    padding: 10px 30px;
+    margin-top: 40px;
+    background-color: rgba(161, 159, 223, 0.582);
+    border-radius: 30px;
+    transition:  0.25s ease;
+    
+    
+}
+.content-container .content .btn:hover {
+    background-color: rgba(161, 159, 223, 0.882);
+    transform: translateY(-5px);
+}
+/*Main image*/
+section .marvel-chapter {
+    display: flex;
+}
+section .marvel-chapter img {
+    width: 400px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+section .starwars-chapter {
+    display: flex;
+}
+section .starwars-chapter img {
+    width: 310px;
+    height: 180px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin: 0 auto;
+}
+section .disney-chapter {
+    display: flex;
+}
+section .disney-chapter img {
+    width: 280px;
+    height: 220px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+/*Main content section*/
+.main-wraper {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    display: flex;
+    width: 1300px;
+    height: 400px;
+}
+.main-wraper .wraper {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+}
+.main-wraper .wraper .wraper-img img {
+    cursor: pointer;
+    
+    background-color: rgb(242, 242, 242);
+    border-radius: 5px;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.main-wraper .wraper .wraper-img {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    transition: 0.25s ease;
+}
+.main-wraper .wraper .wraper-img:hover {
+    transform: scale(1.03);
+}
+.main-wraper .wraper .wraper-img .logo img {
+    width: 80px;
+    top: 10px;
+    right: 10px;
+    height: 20px;
+    position: absolute;
+}
+.main-wraper .wraper .name-of-product {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    height: 40px;
+}
+.main-wraper .wraper .price-of-product {
+    font-style: italic;
+    font-size: 14px;
+    margin: 8px 0;
+}
+.main-wraper .wraper .wraper-img .starwars-logo img {
+    width: 60px;
+    top: 10px;
+    right: 10px;
+    height: 40px;
+    position: absolute; 
+}
+.main-wraper .wraper .wraper-img .disney-logo img {
+    width: 60px;
+    top: 10px;
+    right: 10px;
+    height: 28px;
+    position: absolute; 
+}
+/*Shoppind card style*/
+section .main-wraper .wraper .shopping-card {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    max-height: 22px;
+}
+section .main-wraper .wraper .shopping-card img {
+    width: 20px;
+    height: 20px;
+    margin-right: 40px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+section .main-wraper .wraper .shopping-card img:hover{
+    transform: scale(1.1);
+}
+section .main-wraper .wraper .shopping-card p {
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+section .main-wraper .wraper .shopping-card p:hover {
+    color: brown;
+    transform: translateY(-2px);
+}
+/*Shopping Card*/
+.hide {
+    visibility: hidden  ;
+}
+.shopping-backet-visible {
+    transform: translateX(-400px);
+    
+}
+
+.shopping-main {
+    position: fixed;
+    right: -400px;
+    top: 0;
+    height: 100vh;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    z-index: 11;
+    transition: 0.25s ease;
+}
+.shopping-main .price-at-all {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    margin: 0 20px;
+}
+.shopping-main .price-at-all h3 {
+    font-size: 18px;
+    margin-right: 20px;
+}
+.shopping-main .price-at-all .price-btn {
+    font-size: 16px;
+    font-style: italic;
+    background-color: rgb(224, 205, 215);
+    border-radius: 5px;
+    padding: 5px 8px;
+
+}
+.shopping-main .price-at-all span {
+    margin-left: 10px;
+}
+.shopping-main .make-order-btn{
+    margin: 20px 40px;
+    padding: 15px;
+    background-color: rgb(175, 175, 189);
+    border-radius: 15px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    transition: 0.25s ease;
+    cursor: pointer;
+}
+.shopping-main .make-order-btn:hover{
+    background-color: rgb(150, 150, 159);  
+}
+.shopping-main .shopping-card-header {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.shopping-card-header img{
+    width: 40px;
+}
+.shopping-card-header #cross {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    width: 15px;
+}
+.shopping-card-product {
+    display: flex;
+
+    justify-content: space-around;
+    width: 400px;
+}
+.shopping-card-main-content .shopping-card-count-of-product .plus-btn{
+    cursor: pointer;
+    background-color: rgb(210, 210, 210);
+    padding: 5px 8px;
+    border-radius: 7px;
+    transition: 0.25s ease;
+}
+.shopping-card-main-content .shopping-card-count-of-product .plus-btn:hover {
+    background-color: rgba(255, 0, 0, 0.342);
+}
+.shopping-card-main-content .shopping-card-count-of-product .minus-btn{
+    cursor: pointer;
+    background-color: rgb(210, 210, 210);
+    padding: 5px 8px;
+    border-radius: 7px;
+    transition: 0.25s ease;
+}
+.shopping-card-main-content .shopping-card-count-of-product .minus-btn:hover {
+    background-color: rgba(255, 0, 0, 0.342);
+}
+.shopping-card-product img {
+    width: 140px;
+    background-color: rgba(50, 50, 50, 0.136);
+    border-radius: 8px;
+}
+.shopping-card-product .shopping-card-main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 200px;
+}
+.shopping-card-product .shopping-card-main-content h2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+.shopping-card-product .shopping-card-main-content p {
+    margin: 8px 0px;
+}
+.shopping-card-product .shopping-card-product h1 {
+    width: 50px;
+}
+.shopping-card-product .shopping-card-count-of-product {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.shopping-card-count-of-product h3{
+    margin: 0 10px;
+    font-size: 17px;
+}
+
+ .shopping-card-product .cross {
+    cursor: pointer;
+    position: absolute;
+    margin-top: 13px;
+    right: 10px;
+    width: 10px;
+}
