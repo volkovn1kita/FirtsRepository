@@ -1,0 +1,45 @@
+#nav, #nav ul{
+    border-radius: 30px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#nav{
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    height: 18px;
+    width: 492.3px;
+
+}
+
+#nav a{
+    display: block;
+    padding: 0px 20px;
+    text-decoration: none;
+    border-right:1px solid #000 ;
+    border-radius: 30px;
+    text-align: center;
+}
+
+#nav li{
+    float: left;
+    position: relative;
+}
+#nav a:hover{
+    color: #000;
+    background-color: deepskyblue;
+}
+#nav ul{
+    position: absolute;
+    display: none;
+}
+#nav ul li{
+    border-left: 1px solid #000;
+  
+    border-bottom: 1px solid #000;
+    border-radius: 30px;
+}
+#nav li:hover ul{
+    display: block;
+}
